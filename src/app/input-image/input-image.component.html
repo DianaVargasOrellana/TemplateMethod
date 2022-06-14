@@ -1,0 +1,9 @@
+<article>
+  <input type="file" (change)="captureFile($event)" >
+  <button (click)="show(inputFile)"  >Submit</button>
+</article>
+<article>
+  <div class="hide" #inputFile>
+    <img [src]="file">
+  </div>
+</article>

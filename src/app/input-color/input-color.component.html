@@ -1,0 +1,9 @@
+<section>
+  <input type="color" [(ngModel)]="color">
+  <button (click)="show(refInput)">Submit</button>
+</section>
+<section class="hide" id="input-color" #refInput>
+  <div class="input-color-block"   [ngStyle]="{'background-color': '' + this.bgcolor}" >
+    div con color
+  </div>
+</section>

@@ -1,0 +1,7 @@
+<article>
+  <input type="text" [(ngModel)]="text">
+  <button (click)="show(inputText)">Submit</button>
+</article>
+<article class="hide" #inputText>
+  <span>{{this.text}}</span>
+</article>
